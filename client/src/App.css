@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.main {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.flex-cont {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 200px;
+  width: 500px;
+  background-color: #7cd0e8;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.cover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.buttons {
+  width: 200px;
+  height: 50px;
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttons button {
+  height: 100%;
+  background-color: #7cd0e8;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.buttons button:hover {
+  opacity: 0.6;
+  color: aliceblue;
+}
+.dialog-cover {
+  width: 400px;
+  position: absolute;
+  right: 100px;
+  top: 50px;
+}
+.dia {
+  width: 100%;
+  position: relative;
+}
+.dialog-input {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  padding: 5px;
+}
+.dialog-input label {
+  text-transform: lowercase;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #ccc;
+  font-weight: 700;
+}
+.dialog-input input {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+input {
+  outline: none;
+}
+dialog {
+  border: 2px solid #ccc;
+}
+.dialog-error {
+  text-align: center;
+  color: red;
+  margin: 0 0 0 30%;
+}
+.form-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+}
+.form-buttons button {
+  width: 65%;
+  height: 100%;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #61dafb;
+  border: none;
+  cursor: pointer;
+}
+.close-dialog {
+  position: relative;
+  width: 98%;
+  height: 20px;
+  top: 0;
+}
+.close-dialog span {
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  width: 20px;
+  color: coral;
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
